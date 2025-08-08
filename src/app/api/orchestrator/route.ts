@@ -1,3 +1,4 @@
+// Updated environment variables
 // src/app/api/orchestrator/route.ts
 
 import { createClient } from '@supabase/supabase-js';
