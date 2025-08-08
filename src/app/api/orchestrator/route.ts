@@ -98,7 +98,7 @@ export async function POST(req: NextRequest) {
     console.log('Task completed successfully');
     return NextResponse.json({ success: true, taskId: taskId, response: agentResponse }, { status: 200 });
 
-  } catch (error: Error) {
+  } catch (error: any) {
     console.error('An error occurred in the orchestrator:', error);
     
     if (taskId!) {
