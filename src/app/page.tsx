@@ -36,7 +36,7 @@ export default function HomePage() {
 
       setResponse(data.response); // Set the successful response to display it
 
-    } catch (err: Error) {
+    } catch (err: any) {
       setError(err.message);
     } finally {
       setIsLoading(false);
